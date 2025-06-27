@@ -32,7 +32,7 @@ graph TD
     C -->|Output (stdout/stderr)| B
     B -->|Result| A
     A -->|Displays Output| D[Output Console]
-
+```
 
 
 ## 🚀 Getting Started
