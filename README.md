@@ -21,7 +21,7 @@ An interactive desktop application for Arch Linux (Gnome) designed to make learn
 *   **Visually Engaging:** A "Cyber Glow" theme with animated backgrounds for each lesson to make learning more fun.
 *   **Project-Based Learning:** Apply your skills by building small, real-world projects guided by the app.
 
-## 🛠️ Technical Architecture
+# 🛠️ Technical Architecture
 
 The application is built with Electron and uses a simple but effective architecture to provide an interactive learning experience.
 
@@ -32,6 +32,7 @@ graph TD
     C -->|Output (stdout/stderr)| B
     B -->|Result| A
     A -->|Displays Output| D[Output Console]
+
 ```
 
 ## 🚀 Getting Started
