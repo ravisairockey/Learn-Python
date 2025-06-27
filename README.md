@@ -85,7 +85,7 @@ The AppImage is a portable package that can be run on most Linux distributions. 
 This application was created by **Ravi Sai Vigneswara**.
 
 
-## 🙏 Author
+## 🙏 Special Thanks
 TCM Security: Cybersecurity Consulting & Training
 
 ## 🤝 Contributing
