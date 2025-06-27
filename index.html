@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Learn Python</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="sidebar">
+      <h2>Lessons</h2>
+      <ul id="lesson-list">
+        <li data-lesson="introduction">Introduction</li>
+        <li data-lesson="strings">Strings</li>
+        <li data-lesson="math">Math</li>
+        <li data-lesson="variables">Variables and Methods</li>
+        <li data-lesson="functions">Functions</li>
+        <li data-lesson="booleans">Boolean Expressions</li>
+        <li data-lesson="conditionals">Conditional Statements</li>
+        <li data-lesson="lists">Lists</li>
+        <li data-lesson="tuples">Tuples</li>
+        <li data-lesson="looping">Looping</li>
+        <li data-lesson="adv-strings">Advanced Strings</li>
+        <li data-lesson="dictionaries">Dictionaries</li>
+        <li data-lesson="modules">Importing Modules</li>
+        <li data-lesson="sockets">Sockets</li>
+        <li data-lesson="port-scanner">Project: Port Scanner</li>
+        <li data-lesson="user-input">User Input</li>
+        <li data-lesson="files">Reading and Writing Files</li>
+        <li data-lesson="classes">Classes and Objects</li>
+        <li data-lesson="shoe-budget">Project: Shoe Budget Tool</li>
+      </ul>
+    </div>
+    <div id="main-content">
+      <div id="lesson-content">
+        <h1 id="lesson-title">Welcome to Learn Python!</h1>
+        <p id="lesson-text">Your interactive Python learning journey starts here. Select a lesson from the sidebar to begin.</p>
+      </div>
+      <div id="code-editor-container">
+        <textarea id="code-editor"># Your code goes here</textarea>
+        <button id="run-button">Run Code</button>
+        <div id="output-console">
+          <pre id="output-text"></pre>
+        </div>
+      </div>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

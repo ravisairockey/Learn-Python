@@ -1,0 +1,38 @@
+{
+  "name": "learn-python",
+  "version": "1.0.0",
+  "description": "An interactive desktop application for learning Python.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "python",
+    "learn",
+    "education",
+    "electron"
+  ],
+  "author": {
+    "name": "Ravi Sai Vigneswara",
+    "email": "ravirocky513@gmail.com"
+  },
+  "homepage": "https://github.com/ravisairockey/Learn-Python",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^37.1.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.ravisairockey.learn-python",
+    "productName": "Learn Python",
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Education"
+    }
+  }
+}
