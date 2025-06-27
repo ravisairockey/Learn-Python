@@ -1,25 +1,38 @@
 # Learn Python: The Interactive Desktop App
 
-![Learn Python App Banner](https://via.placeholder.com/800x200.png?text=Learn+Python+App)
+![Learn Python Banner](./assets/banner.svg)
 
-**An interactive desktop application for Arch Linux (Gnome) designed to make learning the Python programming language fast, fun, and effective.**
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+  <img src="https://img.shields.io/badge/version-1.0.0-brightgreen.svg" alt="Version">
+  <img src="https://img.shields.io/badge/framework-Electron-47848f.svg" alt="Framework">
+  <img src="https://img.shields.io/badge/language-Python-3776ab.svg" alt="Language">
+</p>
 
-This project was born out of the idea that learning to code should be an engaging, hands-on experience. Instead of passively reading tutorials, this app provides an interactive environment where you can learn, code, and see results instantly.
+An interactive desktop application for Arch Linux (Gnome) designed to make learning the Python programming language fast, fun, and effective.
+
+---
 
 ## ✨ Core Features
 
 *   **Interactive Learning Modules:** Bite-sized lessons that combine theory with immediate coding practice.
-*   **Built-in Code Editor:** A lightweight yet powerful code editor powered by Monaco Editor, so you can write and test Python code without leaving the app.
+*   **Built-in Code Editor:** A lightweight yet powerful code editor so you can write and test Python code without leaving the app.
 *   **Guided Curriculum:** A structured learning path that takes you from "Hello, World!" to more advanced topics in a logical progression.
-*   **Gamified Experience:** Track your progress, earn achievement badges, and tackle daily coding challenges to stay motivated.
+*   **Visually Engaging:** A "Cyber Glow" theme with animated backgrounds for each lesson to make learning more fun.
 *   **Project-Based Learning:** Apply your skills by building small, real-world projects guided by the app.
 
-## 💻 Technology Stack
+## 🛠️ Technical Architecture
 
-*   **Framework:** [Electron](https://www.electronjs.org/)
-*   **Frontend:** HTML, CSS, JavaScript (Potentially with [Vue.js](https://vuejs.org/))
-*   **Code Editor:** [Monaco Editor](https://microsoft.github.io/monaco-editor/)
-*   **Backend Code Execution:** A sandboxed Python interpreter.
+The application is built with Electron and uses a simple but effective architecture to provide an interactive learning experience.
+
+```mermaid
+graph TD
+    A[User Interface (Renderer Process)] -- Code to Run --> B(Electron Main Process);
+    B -- Executes Python Script --> C{Python Child Process};
+    C -- Output (stdout/stderr) --> B;
+    B -- Result --> A;
+    A -- Displays Output --> D[Output Console];
+```
 
 ## 🚀 Getting Started
 
@@ -35,12 +48,9 @@ There are two ways to run the application:
 
 **1. Running from the AppImage (Recommended)**
 
-The AppImage is a portable package that can be run on most Linux distributions.
+The AppImage is a portable package that can be run on most Linux distributions. You can find it in the [Releases](https://github.com/ravisairockey/Learn-Python/releases) section.
 
-1.  Navigate to the `dist` directory:
-    ```bash
-    cd Learn-Python/dist
-    ```
+1.  Download the `Learn-Python-1.0.0.AppImage` file.
 2.  Make the AppImage executable:
     ```bash
     chmod +x "Learn Python-1.0.0.AppImage"
@@ -67,14 +77,6 @@ The AppImage is a portable package that can be run on most Linux distributions.
     ```bash
     npm start
     ```
-
-## 🗺️ Features Implemented
-
-*   **Full Curriculum:** All 19 lessons are implemented with content and code examples.
-*   **Interactive Code Editor:** An in-app code editor allows you to run the lesson's code and experiment with your own.
-*   **Live Python Execution:** Code is executed in a sandboxed environment, and the output is displayed in the app.
-*   **Dynamic UI:** The app features a "Cyber Glow" theme with animated backgrounds for each lesson, creating an immersive learning experience.
-*   **Cross-platform:** Built with Electron, this app can be packaged for other operating systems as well.
 
 ## ✍️ Author
 

@@ -30,7 +30,8 @@
     "productName": "Learn Python",
     "linux": {
       "target": [
-        "AppImage"
+        "AppImage",
+        "deb"
       ],
       "category": "Education"
     }
