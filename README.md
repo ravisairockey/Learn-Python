@@ -27,11 +27,11 @@ The application is built with Electron and uses a simple but effective architect
 
 ```mermaid
 graph TD
-    A[User Interface (Renderer Process)] -- Code to Run --> B(Electron Main Process);
-    B -- Executes Python Script --> C{Python Child Process};
-    C -- Output (stdout/stderr) --> B;
-    B -- Result --> A;
-    A -- Displays Output --> D[Output Console];
+    A[User Interface (Renderer Process)] -->|Code to Run| B[Electron Main Process]
+    B -->|Executes Python Script| C[Python Child Process]
+    C -->|Output (stdout/stderr)| B
+    B -->|Result| A
+    A -->|Displays Output| D[Output Console]
 ```
 
 ## 🚀 Getting Started
