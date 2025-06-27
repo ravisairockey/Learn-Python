@@ -21,17 +21,18 @@ An interactive desktop application for Arch Linux (Gnome) designed to make learn
 *   **Visually Engaging:** A "Cyber Glow" theme with animated backgrounds for each lesson to make learning more fun.
 *   **Project-Based Learning:** Apply your skills by building small, real-world projects guided by the app.
 
-# 🛠️ Technical Architecture
+## 🛠️ Technical Architecture
 
 The application is built with Electron and uses a simple but effective architecture to provide an interactive learning experience.
 
 ```mermaid
 graph TD
-    A[User Interface (Renderer Process)] -->|Code to Run| B[Electron Main Process]
-    B -->|Executes Python Script| C[Python Child Process]
-    C -->|Output (stdout/stderr)| B
+    A[Renderer UI] -->|Run Code| B[Main Process]
+    B -->|Run Script| C[Python Proc]
+    C -->|stdout/stderr| B
     B -->|Result| A
-    A -->|Displays Output| D[Output Console]
+    A -->|Display| D[Console]
+
 ```
 
 
