@@ -33,7 +33,7 @@ graph TD
     B -->|Result| A
     A -->|Displays Output| D[Output Console]
 
-```
+
 
 ## 🚀 Getting Started
 
